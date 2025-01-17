@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+
+}
+
+#formulario {
+    background: #ffffff;
+    padding: 20px;
+    margin-top: 10px;
+    border: 1px solid #dddddd;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+[type="color"] {
+    width: 100px;              
+    height: 100px;             
+    border-radius: 60%;        
+    border: none;               
+    padding: 0;                
+    background: none;          
+    cursor: pointer;           
+}
+
+textarea {
+    height: 100px; /* Ajustar la altura del campo de notas */
+    resize: vertical; /* Permitir cambiar el tamaño vertical del campo */
+}
+
+.table-responsive {
+    overflow-x: auto; /* Habilitar desplazamiento horizontal */
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+table, th, td {
+    border: 1px solid #dddddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+
+
+th {
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+
+td:last-child {
+    white-space: nowrap; /* Evitar que los botones se desborden y ocupen varias líneas */
+    text-align: center;
+}
+
+td:nth-child(8), th:nth-child(8) {
+    width: 20%; /* Ajustar el ancho de la columna de notas */
+    word-wrap: break-word; /* Permitir que el texto de la nota se ajuste y no desborde la celda */
+    white-space: normal; /* Permitir que el texto de nota ocupe varias líneas si es largo */
+}
+
+#buscar {
+    margin-top: 10px;
+    padding: 8px;
+    width: 35%;
+}
+
+/* Botones */
+.btn {
+    background-color: #35424a;
+    color: white;
+    border: none;
+    padding: 6px 12px; /* Ajustar tamaño de padding */
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px; /* Ajustar tamaño de texto */
+    border-radius: 4px; /* Bordes redondeados */
+    margin-right: 5px; /* Espaciado entre los botones */
+    display: inline-block; /* Mantener los botones alineados */
+}
+
+.btn.eliminar {
+    background-color: #e74c3c;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+
+a {
+    color: black; /* Color por defecto de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+
+a:hover {
+    color: #35424a;
+}
+
+/* Media Queries para hacer el diseño responsivo */
+@media (max-width: 768px) {
+    #buscar {
+        width: 100%; /* Hacer el campo de búsqueda ancho en pantallas pequeñas */
+        margin-top: 20px; /* Espaciado adicional */
+    }
+
+    .btn {
+        width: 48%; /* Ajustar ancho de botones en móviles */
+        margin-bottom: 10px; /* Separar botones verticalmente */
+        font-size: 13px; /* Reducir el tamaño del texto */
+    }
+
+    td:last-child {
+        text-align: left; /* Alinear a la izquierda en pantallas pequeñas */
+    }
+
+    table {
+        font-size: 14px; /* Reducir el tamaño de la fuente de la tabla */
+    }
+
+    th, td {
+        padding: 10px; /* Aumentar el padding para que sea más fácil de tocar en móviles */
+    }
+
+    td:nth-child(8), th:nth-child(8) {
+        width: auto; /* Dejar que la columna de notas se ajuste automáticamente en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+
+    .btn {
+        width: 100%; /* Hacer que los botones ocupen el 100% del ancho */
+        margin-bottom: 5px;
+        padding: 8px 0; /* Ajustar padding vertical */
+    }
+
+
+    header {
+        font-size: 20px; /* Reducir el tamaño de la fuente del encabezado */
+    }
+
+    #formulario {
+        padding: 15px; /* Reducir padding en formularios */
+    }
+
+    input, textarea {
+        padding: 10px; /* Aumentar padding en campos para facilitar el uso en móviles */
+    }
+
+    table {
+        font-size: 12px; /* Reducir aún más el tamaño de la fuente */
+    }
+
+    th, td {
+        padding: 8px; /* Espaciado más estrecho para tablas pequeñas */
+    }
+}
+
+
+
+
+
